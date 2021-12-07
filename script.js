@@ -18,16 +18,6 @@ const requestBody = {
     },
 };
 
-if (localStorage.getItem("trackingNumbers")) {
-    let trackingData = JSON.parse(localStorage.getItem("trackingNumbers"));
-
-    let valueText = "";
-    for (key of trackingData) {
-        valueText += key.DocumentNumber + "\n";
-    }
-    document.querySelector("textarea").value = valueText;
-}
-
 document.querySelector("#clear").addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector("textarea").value = "";
