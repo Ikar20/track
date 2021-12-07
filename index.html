@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Tracking</title>
+    <link rel="stylesheet" href="https://unpkg.com/primitive-ui/dist/css/main.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="medium-container">
+        <h1 class="text-center">Parcels Bulk Tracking</h1>
+        <div class="main-content">
+            <form>
+                <textarea id="tracking-data" cols="20" rows="16" placeholder="Enter valid the tracking numbers in this field,
+                 separated by commas, spaces or starting from the new line."></textarea>
+                <button id="clear" class="muted-button">Clear</button>
+                <button id="track" class="button">Track</button>
+            </form>
+            <div class="result">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
